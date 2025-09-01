@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheCoinRepublic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="nav-logo">
+      <img src="https://www.thecoinrepublic.com/wp-content/uploads/2024/04/The-coin-Republic-logo.png" alt="Logo" style="height: 40px; width:auto">
+      <span class="logo-text"><span class="fame-highlight">THE</span> CoinRepublic</span>
+    </div>
+    <!-- Center Menu -->
+    <div class="nav-center">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">News</a></li>
+        <li>
+          <a href="#">Crypto ▾</a>
+          <ul class="dropdown">
+            <li><a href="#">Bitcoin</a></li>
+            <li><a href="#">Cardano</a></li>
+            <li><a href="#">Chainlink</a></li>
+            <li><a href="#">Dogecoin</a></li>
+            <li><a href="#">Ethereum</a></li>
+            <li><a href="#">Polkadot</a></li>
+            <li><a href="#">Ripple</a></li>
+            <li><a href="#">USDT</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Market</a></li>
+        <li><a href="#">Stock</a></li>
+        <li><a href="#">Price Prediction</a></li>
+      </ul>
+    </div>
+    <!-- Right Side -->
+    <div class="nav-right">
+      <span class="lang-nav">English <span class="flag-emoji">🇺🇸</span></span>
+      <span class="search-icon">🔍</span>
+      <button class="burger" id="menuBtn" aria-label="Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- News Section -->
+  <section class="news-section">
+    <h2>LATEST NEWS ON CRYPTO</h2>
+    <p>
+      Discover our in-depth crypto category pages for everything you need to know about top
+      cryptocurrencies. Get the latest updates, market trends, and expert analyses, all in one place. 
+      Perfect for beginners and seasoned investors alike!
+    </p>
+    <p>
+      Don’t miss our <span>Price Prediction</span> Page—your go-to 
+      for expert forecasts and analytical tools to guide your investment decisions. Stay ahead in the 
+      crypto market with our precise insights.
+    </p>
+  </section>
+
+  <!-- Cards Container -->
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="card" onclick="openArticle('https://example.com/article1')">
+      <img src="https://stormgain.com/sites/default/files/2024-01/solana-price-prediction-main.jpg" alt="Solana">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=1" alt="Author">
+          <span>Dirk van Haaster</span>
+          <span class="time">9 hours ago</span>
+        </div>
+        <div class="title">Solana Price Can Exceed $200 If This Structure Holds</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openArticle('https://example.com/article2')">
+      <img src="https://coinjournal.net/wp-content/uploads/2024/04/bitcoin-btc.jpg" alt="Bitcoin">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=2" alt="Author">
+          <span>John Doe</span>
+          <span class="time">5 hours ago</span>
+        </div>
+        <div class="title">Bitcoin Eyes $70K as Market Shows Strong Bullish Momentum</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openArticle('https://example.com/article3')">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.ZPAV79FmJPaeVlXzDdPGegHaE8?pid=Api&P=0&h=220" alt="Ethereum">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=3" alt="Author">
+          <span>Alice Smith</span>
+          <span class="time">12 hours ago</span>
+        </div>
+        <div class="title">Ethereum Could Break $4,000 With Upcoming Upgrade</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openArticle('https://example.com/article4')">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.IL9eMduTmiIa333sKJYTjgHaEK?pid=Api&P=0&h=220" alt="Cardano">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=4" alt="Author">
+          <span>Michael Lee</span>
+          <span class="time">2 days ago</span>
+        </div>
+        <div class="title">Cardano Growth Continues as New Projects Launch on Network</div>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="card" onclick="openArticle('https://example.com/article5')">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.w4X6xImT26QSwovtTK7q3wHaEK?pid=Api&P=0&h=220" alt="Polkadot">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=5" alt="Author">
+          <span>Sarah Kim</span>
+          <span class="time">1 day ago</span>
+        </div>
+        <div class="title">Polkadot Expands Cross-Chain Capabilities With New Update</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openArticle('https://example.com/article6')">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.vIpugozkACT-H6_194222QHaD4?pid=Api&P=0&h=220" alt="Ripple">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=6" alt="Author">
+          <span>David Wong</span>
+          <span class="time">3 days ago</span>
+        </div>
+        <div class="title">Ripple Pushes for Global Payments Expansion Amid Legal Wins</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openArticle('https://example.com/article7')">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.f-UZkbd7TJu3l6PINH-WhAHaE8?pid=Api&P=0&h=220" alt="USDT">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=7" alt="Author">
+          <span>Emily Brown</span>
+          <span class="time">6 hours ago</span>
+        </div>
+        <div class="title">Tether Reports Record Reserves Backing Stablecoin Supply</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="openArticle('https://example.com/article8')">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.50wwpVAys3kw39xM_R4QUwHaEK?pid=Api&P=0&h=220" alt="Chainlink">
+      <div class="card-content">
+        <div class="author">
+          <img src="https://i.pravatar.cc/28?img=8" alt="Author">
+          <span>Olivia Clark</span>
+          <span class="time">4 hours ago</span>
+        </div>
+        <div class="title">Chainlink Adoption Grows as More Firms Integrate Oracle Tech</div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-menu">
+      <a href="#">PRICE PREDICTION</a>
+      <a href="#">CONTACT US</a>
+      <a href="#">ABOUT US</a>
+    </div>
+
+    <div class="footer-note">
+      Please note that our 
+      <a href="#">privacy policy</a>, 
+      <a href="#">Terms and Conditions</a>, 
+      <a href="#">cookies</a>, 
+      and do not sell my personal information has been updated.
+    </div>
+
+    <div class="languages">
+      <span><img src="https://flagcdn.com/gb.svg" alt=""> English</span>
+      <span><img src="https://flagcdn.com/es.svg" alt=""> Español (Spanish)</span>
+      <span><img src="https://flagcdn.com/sa.svg" alt=""> العربية (Arabic)</span>
+      <span><img src="https://flagcdn.com/de.svg" alt=""> Deutsch (German)</span>
+      <span><img src="https://flagcdn.com/ru.svg" alt=""> Русский (Russian)</span>
+      <span><img src="https://flagcdn.com/dk.svg" alt=""> Dansk (Danish)</span>
+    </div>
+  </footer>
+
+  <!-- Floating Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle">🌙</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
